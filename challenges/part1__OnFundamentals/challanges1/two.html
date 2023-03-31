@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challange2</title>
+</head>
+<body>
+    <script>
+        /*
+        Use the BMI example from Challenge #1, and the code you already wrote, and
+        improve it.
+        Your tasks:
+        1. Print a nice output to the console, saying who has the higher BMI. The message
+        is either "Mark's BMI is higher than John's!" or "John's BMI is higher than Mark's!"
+        2. Use a template literal to include the BMI values in the outputs. Example: "Mark's
+        BMI (28.3) is higher than John's (23.9)!"
+        Hint: Use an if/else statement 😉
+        */
+        let marksMass = 95
+        let marksHeight = 1.88
+        let johnsMass = 85
+        let johnsHeight = 1.76
+        const marksBMI = marksMass/marksHeight**2
+        const johnsBMI = johnsMass/johnsHeight**2
+        console.log(marksBMI, johnsBMI)
+        let markHigherBMI = marksBMI > johnsBMI
+        console.log(markHigherBMI)
+    </script>
+</body>
+</html>

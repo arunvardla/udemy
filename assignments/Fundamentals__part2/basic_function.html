@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function</title>
+</head>
+<body>
+    <script>
+        function describeCountry(country, population, capitalCity){
+            return `${country} has ${population} million people and its capital city is ${capitalCity}`
+        } 
+        const canada = describeCountry('canada', 1331, 'Ottawa')
+        const maxico = describeCountry('maxico', 1331, 'maxico city')
+        const poland = describeCountry('canada', 1331, 'warsaw')
+        console.log(canada, maxico, poland)
+    </script>
+</body>
+</html>

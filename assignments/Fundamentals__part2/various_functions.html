@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function Declaration</title>
+</head>
+<body>
+    <script>
+        // Function declaration
+        function percentageOfWorld1(population){
+            const percentage = (population/7900)*100
+            const result = `China has ${population} million people, so its about ${percentage} of the worlds population`
+            console.log(result)
+            return result
+        }
+        percentageOfWorld1(1441)
+
+        // Function Expression
+        const percentageOfWorld2 = function(population){
+            const percentage = (population/7900)*100
+            const res = `China has ${population} million people, so its about ${percentage} of the worlds population`
+            console.log(res)
+            return res
+        }
+        percentageOfWorld2(1441)
+
+        // Arrow Function
+        const percentage3 = (population) => {
+            const percentage = (1441/7900)*100
+            const ress = `China has ${population} million people, so its about ${percentage} of the worlds population`
+            console.log(ress)
+        }
+        percentage3(1441)
+
+        // Function calling other Function
+        function describePopulation(country, population){
+            let abc = percentageOfWorld1(population)
+            console.log(abc)
+        }
+        describePopulation("Finland", 1441)
+        describePopulation("India", 1221)
+        describePopulation("Japan", 1331)
+
+    </script>
+</body>
+</html>
