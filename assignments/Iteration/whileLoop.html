@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>While Loop</title>
+</head>
+<body>
+    <script>
+        /*
+        LECTURE: The while Loop
+        1. Recreate the challenge from the lecture 'Looping Arrays, Breaking and Continuing',
+        but this time using a while loop (call the array 'percentages3')
+        2. Reflect on what solution you like better for this task: the for loop or the while
+        loop?
+        */
+       const populations = [10, 1441, 332, 83];
+       const percentage3 = [];
+       const percentageOfWorld1 = function(population){
+        return population / 7900 * 100;
+       }
+       let i = 0;
+       while(i < populations.length){
+        percentage3.push(percentageOfWorld1(populations[i]));
+        i++;
+       }
+       console.log(percentage3);
+    </script>
+</body>
+</html>
